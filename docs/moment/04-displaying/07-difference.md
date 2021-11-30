@@ -24,6 +24,15 @@ var b = moment([2007, 0, 28]);
 a.diff(b, 'days') // 1
 ```
 
+To get the difference in another unit of measurement in ISO8601 format date.
+
+```javascript
+var start = moment('2007-03-01');
+var end = moment('2007-03-30');
+end.diff(start, 'days')
+```
+
+
 To get the duration of a difference between two moments, you can pass `diff` as an argument into `moment#duration`. See the docs on [moment#duration](#/durations/diffing/) for more info.
 
 The supported measurements are `years`, `months`, `weeks`, `days`, `hours`, `minutes`, and `seconds`. For ease of development, the singular forms are supported as of **2.0.0**. Units of measurement other than milliseconds are available in version **1.1.1**.
